@@ -224,7 +224,7 @@ class SurveyMonkey {
 	 * @return array Results
 	 */
 	public function getSurveyDetails($surveyId){
-        $params = array ( 'survey_id' => $surveyId );
+        $params = array ( 'survey_id' => (string)$surveyId );
         return $this->run('get_survey_details', $params);
 	}
 
